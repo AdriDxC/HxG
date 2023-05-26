@@ -1,0 +1,162 @@
+
+body{
+	font-family: 'Bree Serif';
+	background-color:#192B56;
+	
+}
+
+header{
+	display:flex;
+	min-height:70px;
+	background-color:#192B56;
+	justify-content:space-between;
+	align-items:center;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+header img{
+	
+	width:200px;
+	height:100px;
+}
+
+h1{
+	color:white;
+}
+
+h2{
+	color:white;
+}
+
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+nav a {
+	color:white;
+	font-weight:600;
+	padding-right:20px;
+}
+
+nav a:hover{
+	color:#005BBE;
+}
+
+.logo{
+	display:flex;
+}
+
+.primerContenedor{ 
+	padding-top:10px;
+	padding-bottom:40px;
+	background-color:#344B7F;
+	text-align:center;
+}
+
+.h2-grande{
+	animation:mostrarTexto 4s;
+	color:white;
+	margin-top:0;
+	font-size:100px;
+}
+
+.h2-arriba{
+	animation:mostrarTextoBajo 3s;
+	color:white;
+	font-size:32px;
+	margin-top:-100px;
+}
+
+.formularioIniciarSesion{
+	color:white;
+	font-size:20px;
+	text-align:center;
+}
+
+.formularioIniciarSesion input{
+	font-size:20px;
+	font-family: 'Bree Serif';
+	color:white;
+	border:none;
+	background:none;
+	border-bottom:1px solid white;
+	text-align:center;
+	
+
+}
+
+label{
+	
+	color:white;
+}
+
+.elBoton input{
+	color:#192B56;
+	background:white;
+	font-size:20px;
+	width:20%;
+	border-radius:30px;
+}
+
+.elBoton input:hover{
+	transition: all .5s;
+	opacity:50%;
+	cursor:pointer;
+}
+
+
+
+@keyframes mostrarTexto{
+	
+	0%{
+		opacity:0%;
+		
+	}
+	100%{
+		opacity:100%;
+		
+	}
+}
+
+@keyframes mostrarTextoBajo{
+	
+	0%{
+		opacity:0%;
+	}
+	20%{
+		opacity:0%;
+	}
+		
+	100%{
+		opacity:100%;
+		
+	}
+}
+
+@media (max-width:700px){
+	header{
+		flex-direction:column;
+	}
+	
+	nav{
+		padding:10px 0px;
+	}
+
+nav a {
+	padding-right:0px;
+}
+
+.h2-grande{
+	
+	font-size:50px;
+}
+
+.h2-arriba{
+	font-size:20px;
+	margin-top:0;
+}
+	
+}
